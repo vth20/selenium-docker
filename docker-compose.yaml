@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  app-selenium:
+    container_name: app-selenium
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - 90:90
+    volumes:
+      - .:/app
+    
